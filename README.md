@@ -17,6 +17,7 @@ Running Swift and Kitura on GAE Flex is as easy as:
 git clone https://github.com/mcdonamp/kitura-flex
 cd kitura-flex
 gcloud app deploy
+gcloud app browse
 ```
 
 # Advanced Usage
