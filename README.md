@@ -22,6 +22,15 @@ gcloud app browse
 
 # Advanced Usage
 
+## Modifying Source
+App code is available in `Sources/` and contains `main.swift` and `Controller.swift`.
+`main.swift` is the application entry point. It initializes the controller, and starts
+the app server. `Controller.swift` contains all the routes, including the GAE specific
+routes. New routes can be added here, or in additional files and called from here.
+
+An area for future improvement would be to package the GAE routes as middleware similar
+to how Cloud Foundry is implemented in the original sample.
+
 ## Logging
 
 Logs are output to [Google Cloud Logging](https://console.cloud.google.com/logs)
