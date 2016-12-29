@@ -24,7 +24,7 @@ do {
   HeliumLogger.use(LoggerMessageType.info)
   let controller = try Controller()
   Kitura.addHTTPServer(onPort: 8080, with: controller.router)
-  // Start Kitura-Starter server
+  // Start Kitura-Flex server
   Kitura.run()
 } catch let error {
   Log.error(error.localizedDescription)
